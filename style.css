@@ -663,3 +663,15 @@ footer a:hover{
     .hotelDescription p{ 
         font-size: .9rem; 
     }
+
+    /* Activities - Mobile */ 
+
+    .activities{ 
+        margin: 55px 20px 45px; 
+    } 
+
+    .activitiesTab{ 
+        grid-template: repeat(6, 1fr) / 1fr;; 
+        grid-auto-flow: initial; 
+        gap: 24px; 
+    }
