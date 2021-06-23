@@ -455,3 +455,26 @@ footer a:hover{
     .filter{  
         margin: 0 1rem 1rem 0;  
     } 
+
+    /* Popular - Tablet */ 
+
+    .popular{ 
+        margin: 0 0 20px; 
+        padding: 0px;
+    } 
+
+    .popularFrame{ 
+        height: 180px; 
+    } 
+ 
+    .popularDescription .hotelName{ 
+        font-size: 1.4rem; 
+    } 
+
+    .popularDescription p{ 
+        font-size: 1.2rem; 
+    } 
+
+    .popularDescription .fa-star{ 
+        font-size: 1rem; 
+    } 
