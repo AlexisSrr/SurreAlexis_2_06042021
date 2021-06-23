@@ -399,3 +399,17 @@ footer{
 footer h3{
     font-size: 17px;
 }
+
+footer div{ 
+    flex: 1; 
+    
+} 
+ 
+footer li{ 
+    margin-bottom: 15px; 
+}  
+
+footer a:hover{ 
+    font-weight: 600; 
+    color: #0065FC; 
+}
