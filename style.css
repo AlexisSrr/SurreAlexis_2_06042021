@@ -488,3 +488,23 @@ footer a:hover{
     .containerHotels{ 
         flex-direction: column; 
     }  
+
+    /* Activities - Tablet */ 
+    
+    .activitiesTab{ 
+        height: auto; 
+    } 
+
+    .activityFrame 
+    { 
+        height: 190px; 
+    } 
+ 
+    .row12, .row5, .row6{ 
+        grid-row-end: span 4; 
+        grid-column-end: span 2; 
+    } 
+ 
+    .activityDescription{ 
+        font-size: 1.1rem; 
+    } 
