@@ -680,3 +680,15 @@ footer a:hover{
         grid-row-end: span 1; 
         grid-column-end: span 1; 
     }
+
+    /* Footer - Mobile */ 
+
+    footer{
+        flex-direction: column; 
+        padding: 45px 30px; 
+    } 
+
+    footer div{ 
+        padding: 0; 
+    } 
+} 
