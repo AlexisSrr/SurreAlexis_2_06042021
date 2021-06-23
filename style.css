@@ -143,3 +143,36 @@ nav li a:hover{
 .searchButton i{  
     display: none;  
 }
+
+/* filtres */
+
+.textFilter{ 
+    align-self: center;  
+}
+
+.filters{ 
+    flex-wrap: wrap; 
+    font-weight: 600;   
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.filter{ 
+    align-items: center; 
+    height: 46px; 
+    border: 2px solid #f2f2f2; 
+    border-left: none; 
+    margin-left: 20px;   
+    border-radius: 25px;  
+} 
+
+.filter span{ 
+    padding-left: 9px; 
+    padding-right: 11px;
+}
+
+.filter:hover{  
+    cursor: pointer; 
+    border-color: #0065FC; 
+    color: #0065FC; 
+} 
