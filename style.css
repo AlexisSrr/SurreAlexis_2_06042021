@@ -478,3 +478,13 @@ footer a:hover{
     .popularDescription .fa-star{ 
         font-size: 1rem; 
     } 
+
+    /* Hotels - Tablet */ 
+    
+    .hotels{ 
+        order: 2; 
+    } 
+
+    .containerHotels{ 
+        flex-direction: column; 
+    }  
