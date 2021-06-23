@@ -288,8 +288,7 @@ nav li a:hover{
  
 .popular{ 
     flex: 1; 
-    margin-left: 4%; 
-
+    margin-left: 4%;
     } 
 
 .popularIcon{ 
@@ -597,7 +596,6 @@ footer a:hover{
 
     .searchButton i{ 
         display: inline-block; 
-        min-width: ;
     } 
 
     .filters{ 
