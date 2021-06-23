@@ -570,3 +570,37 @@ footer a:hover{
     nav li:hover{ 
         border-bottom-color:#0065FC; 
     } 
+
+    /* Search - Mobile */ 
+
+    .search{ 
+        margin: 30px 20px; 
+    } 
+
+    .searchInput{ 
+        flex: 1; 
+    } 
+
+    .searchBar{ 
+        margin: 35px 0 30px;
+    }  
+
+    .searchButton{ 
+        position: relative; 
+        width: 50px; 
+        border-radius: 15px; 
+        left: -20px;
+    } 
+
+    .searchButton span{ 
+        display: none; 
+    } 
+
+    .searchButton i{ 
+        display: inline-block; 
+        min-width: ;
+    } 
+
+    .filters{ 
+        margin-bottom: 12px; 
+    } 
