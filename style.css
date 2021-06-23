@@ -176,3 +176,35 @@ nav li a:hover{
     border-color: #0065FC; 
     color: #0065FC; 
 } 
+
+.filterList{ 
+    flex-wrap: wrap; 
+}
+
+.iconFilter{ 
+    position: relative; 
+    right: 1px; 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;  
+    background-color: #DEEBFF; 
+} 
+
+.iconFilter i{ 
+    margin: auto; 
+    color: #0065FC;  
+} 
+
+.iconInfo{ 
+    height: 21px;  
+    width: 21px; 
+    border: 2px solid #f2f2f2ea; 
+    border-radius: 1rem; 
+    margin-right: 10px; 
+}
+
+.iconInfo i{ 
+    margin: auto; 
+    font-size: .9rem; 
+    color: #0065FC;    
+}
