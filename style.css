@@ -352,3 +352,15 @@ nav li a:hover{
     height: 450px; 
     grid-auto-flow: column; 
 } 
+
+.row12{ 
+    grid-row-end: span 13; 
+} 
+
+.row6{ 
+    grid-row-end: span 7; 
+} 
+
+.row5{ 
+    grid-row-end: span 6; 
+} 
