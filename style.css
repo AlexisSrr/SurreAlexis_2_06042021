@@ -35,7 +35,7 @@ a{
 } 
  
 h2{  
-    font-weight: 00;  
+    font-weight: 0;  
 }
 
 .flex{ 
@@ -289,7 +289,6 @@ nav li a:hover{
 .popular{ 
     flex: 1; 
     margin-left: 4%; 
-    padding-right: ;
 
     } 
 
