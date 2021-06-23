@@ -306,3 +306,28 @@ nav li a:hover{
 .popularIcon i{  
     font-size: 1.5rem; 
 }  
+
+.popularFrame{
+    height: 150px; 
+    border: 5px solid #fff; 
+    border-radius: 15px; 
+    margin-bottom: 40px; 
+    box-shadow: 0px 3px 7px #c1c1c1; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    background-color: silver;
+}  
+
+.popularFrame img{ 
+    width: 40%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+ 
+.popularDescription{ 
+    flex: 1;  
+    background-color: #fff; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 10px 20px 10px;  
+} 
