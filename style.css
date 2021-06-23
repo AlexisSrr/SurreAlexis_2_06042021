@@ -508,3 +508,12 @@ footer a:hover{
     .activityDescription{ 
         font-size: 1.1rem; 
     } 
+
+    /* Mobile version */ 
+@media only screen and (max-width: 600px){
+
+    /* General */ 
+
+    .main{ 
+        margin: 0; 
+    } 
