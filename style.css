@@ -639,3 +639,27 @@ footer a:hover{
         font-size: .8rem !important; 
         letter-spacing: 1px; 
     } 
+
+       /* Hotels - Mobile */ 
+
+       .hotelFrame{ 
+        height: 200px; 
+    } 
+
+    .hotels{
+        padding: 0 20px; 
+        background-color: initial;  
+    } 
+
+    .hotelsTab{ 
+        grid-template: repeat(6, 1fr) / 1fr;  
+        gap: 15px; 
+    } 
+
+    .hotelFrame img{ 
+        height: 116px; 
+    } 
+
+    .hotelDescription p{ 
+        font-size: .9rem; 
+    }
