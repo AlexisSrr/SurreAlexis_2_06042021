@@ -429,3 +429,15 @@ footer a:hover{
         font-size: 1rem; 
     }
 } 
+
+/* Tablet version */
+@media only screen and (max-width: 1024px){ 
+
+    /*.main{ 
+        margin: 0; 
+    } */
+
+    .logo .search .activities{
+
+        margin-left: 20px;
+    }
