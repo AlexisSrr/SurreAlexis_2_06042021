@@ -604,3 +604,38 @@ footer a:hover{
     .filters{ 
         margin-bottom: 12px; 
     } 
+
+    /* Popular - Mobile */
+
+    .popular{
+        border-radius: 0;
+        padding: 40px 20px 30px; 
+        margin-bottom: 40px; 
+    } 
+
+    .popularFrame{ 
+        height: 145px;
+        margin-bottom: 10px; 
+        background-color: silver;
+    } 
+
+    .popularIcon i{ 
+        font-size: 1.4rem; 
+    } 
+
+    .hotelName{ 
+        font-size: 1rem !important; 
+    } 
+
+    .popularDescription p{ 
+        font-size: .9rem; 
+    } 
+ 
+    .popularDescription{
+        padding: 15px 10px 10px 20px;  
+    } 
+ 
+    .fa-star{ 
+        font-size: .8rem !important; 
+        letter-spacing: 1px; 
+    } 
