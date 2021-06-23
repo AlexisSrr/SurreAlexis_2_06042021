@@ -342,3 +342,13 @@ nav li a:hover{
     margin-top: 8px; 
     margin-bottom: 0; 
 } 
+
+/* Activities */ 
+ 
+.activitiesTab{ 
+    display: grid; 
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr); 
+    gap: 37.5px; 
+    height: 450px; 
+    grid-auto-flow: column; 
+} 
