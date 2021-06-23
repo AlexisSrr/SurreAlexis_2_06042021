@@ -675,3 +675,8 @@ footer a:hover{
         grid-auto-flow: initial; 
         gap: 24px; 
     }
+
+    .row12, .row5, .row6{  
+        grid-row-end: span 1; 
+        grid-column-end: span 1; 
+    }
