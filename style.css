@@ -261,6 +261,7 @@ nav li a:hover{
 .hotelDescription p{ 
     margin: 0; 
 }
+
 .hotelRate{ 
     word-spacing: -1ch; 
 }
@@ -282,3 +283,26 @@ nav li a:hover{
     font-weight: 700; 
     font-size: 1.2rem; 
 }
+
+/* Populaire */ 
+ 
+.popular{ 
+    flex: 1; 
+    margin-left: 4%; 
+    padding-right: ;
+
+    } 
+
+.popularIcon{ 
+    justify-content: space-between; 
+    align-items: baseline; 
+}
+
+.popularIcon h2{ 
+    margin-top: 0; 
+    margin-bottom: 25px; 
+}
+
+.popularIcon i{  
+    font-size: 1.5rem; 
+}  
