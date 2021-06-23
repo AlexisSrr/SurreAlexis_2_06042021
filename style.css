@@ -208,3 +208,21 @@ nav li a:hover{
     font-size: .9rem; 
     color: #0065FC;    
 }
+
+/* Hotels */ 
+ 
+.hotels, .popular{
+    background-color: #f2f2f2;  
+    border-radius: 20px;  
+    padding: 40px; 
+} 
+
+.hotels{ 
+    flex: 2;
+    padding-left: 40px;
+    
+}  
+
+.hotels > h2{ 
+    margin: 0; 
+} 
