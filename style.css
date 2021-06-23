@@ -37,3 +37,11 @@ a{
 h2{  
     font-weight: 00;  
 }
+
+.flex{ 
+    display: flex;
+}  
+
+.euros{ 
+    font-weight: 600; 
+}
