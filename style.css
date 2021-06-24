@@ -36,7 +36,7 @@ body{
     
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
+    max-width: 1840px;
 } 
 
 .main{
@@ -554,10 +554,6 @@ footer a:hover{
        border-bottom: 3px solid #0065FC;
     }
 
-    nav li .titreact{ 
-        
-    }
-
     nav li a{ 
         padding: inherit; 
     } 
@@ -688,5 +684,6 @@ footer a:hover{
 
     footer div{ 
         padding: 0; 
-    } 
-} 
+        }
+    }
+}
