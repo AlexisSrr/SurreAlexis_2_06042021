@@ -12,10 +12,30 @@ img{display: block;}
 a{color: black;text-decoration: none;}
 ul{list-style-type: none;}
 
+
+
+@media only screen and (max-width: 1280px){ 
+
+    .hotels{ 
+        flex: 1.5;
+    }  
+     
+    .hotelsTab{ 
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr); 
+        margin: 30px 0;  
+    }
+
+    .activityDescription{ 
+        font-size: 1rem; 
+    }
+} 
+
+
+
 body{ 
     
-    box-sizing: border-box;  
-    font-family: 'Raleway', sans-serif; 
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
     max-width: 1440px;
 } 
 
@@ -34,10 +54,6 @@ a{
     color: inherit;  
 } 
  
-h2{  
-    font-weight: 0;  
-}
-
 .flex{ 
     display: flex;
 }  
@@ -346,7 +362,7 @@ nav li a:hover{
 .activitiesTab{ 
     display: grid; 
     grid-template: repeat(12, 1fr) / repeat(4, 1fr); 
-    gap: 37.5px; 
+    gap: 37.5px;    
     height: 450px; 
     grid-auto-flow: column; 
 } 
@@ -412,21 +428,6 @@ footer a:hover{
     color: #0065FC; 
 }
 
-@media only screen and (max-width: 1280px){ 
-
-    .hotels{ 
-        flex: 1.5;
-    }  
-     
-    .hotelsTab{ 
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr); 
-        margin: 30px 0;  
-    }
-
-    .activityDescription{ 
-        font-size: 1rem; 
-    }
-} 
 
 /* Tablet version */
 @media only screen and (max-width: 1024px){ 
@@ -443,7 +444,7 @@ footer a:hover{
     /* Search - Tablet */ 
     .filters{ 
         flex-direction: column;  
-    } 
+    }   
 
     .textFilter{ 
         align-self: auto;  
