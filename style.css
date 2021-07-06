@@ -383,6 +383,57 @@ nav li a:hover{
     height: 100%; 
 }
 
+.activityFrame12{  
+    display: grid; 
+    grid-template-rows: 1fr 50px; 
+    height: 100%; 
+    box-sizing: border-box; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 0.5px 3px #c1c1c1; 
+}
+    
+.activityFrame12 img{ 
+    width: 100%; 
+    object-fit: cover; 
+    height: 100%; 
+    max-height: 600px;
+}
+
+.activityFrame6{  
+    display: grid; 
+    grid-template-rows: 1fr 50px; 
+    height: 100%; 
+    box-sizing: border-box; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 0.5px 3px #c1c1c1; 
+}
+
+.activityFrame6 img{ 
+    width: 100%; 
+    object-fit: cover; 
+    height: 100%; 
+    max-height: 180px;
+}
+
+.activityFrame5{  
+    display: grid; 
+    grid-template-rows: 1fr 50px; 
+    height: 100%; 
+    box-sizing: border-box; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 0.5px 3px #c1c1c1; 
+}
+    
+.activityFrame5 img{ 
+    width: 100%; 
+    object-fit: cover; 
+    height: 100%; 
+    max-height: 145px;
+}
+
 .activityDescription{ 
     align-self: center;  
     background-color: #fff; 
@@ -674,6 +725,21 @@ footer a:hover{
         grid-auto-flow: initial; 
         gap: 24px; 
     } 
+    
+    .activityFrame12 img{ 
+        width: 100%; 
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 160px;
+    }
+
+    .activityFrame5 img{ 
+        width: 100%; 
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 160px;
+    }
+    
 
     .row12, .row5, .row6{  
         grid-row-end: span 1; 
