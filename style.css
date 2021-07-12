@@ -7,7 +7,7 @@
 *{box-sizing: border-box;}
 html, body, ul, li, h1, h4, img{margin: 0;padding: 0;}
 body{font-size: 16px;}
-h1, h3, p{font-size: 0.97rem;}
+h1, h3, p{font-size: 0.98rem;}
 img{display: block;}
 a{color: black;text-decoration: none;}
 ul{list-style-type: none;}
@@ -17,11 +17,9 @@ body{
     box-sizing: border-box;  
     font-family: 'Raleway', sans-serif; 
     max-width: 1440px;
+    margin: 0 auto;
 } 
 
-.main{
-    margin: 0px 75px 75px;
-} 
 ul{ 
     list-style-type: none; 
     padding: 0;    
@@ -71,20 +69,12 @@ nav a{
     padding: 40px 40px 0; 
 } 
 
-.titreheb{
+.titreheb, nav li a:hover{
 
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 35px;
+    padding-top: 38px;
 }
-
-nav li a:hover{ 
-    color: #0065FC; 
-    border-top: 2px solid #0065FC; 
-    padding-top: 38px; 
-}
-
-
 
 /* Barre de recherche*/ 
 
@@ -213,14 +203,14 @@ nav li a:hover{
 /* Hotels */ 
  
 .hotels, .popular{
-    background-color: #f2f2f26c;  
+    background-color: #f2f2f2;  
     border-radius: 20px;  
     padding: 40px; 
 } 
 
 .hotels{ 
     flex: 2;
-    padding-left: 23px;
+    padding-left: 50px;
     
 }  
 
@@ -233,7 +223,7 @@ nav li a:hover{
     display: grid; 
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);  
     gap: 30px; 
-    margin: 30px 0 50px; 
+    margin: 30px 0 70px; 
 }  
  
 .hotelFrame{ 
@@ -245,6 +235,8 @@ nav li a:hover{
     border-radius: 15px; 
     overflow: hidden; 
     box-shadow: 0px 3px 7px #c1c1c1;
+    min-width: 250px;
+    flex-wrap: wrap;
 } 
   
 .hotelFrame img{ 
@@ -291,9 +283,7 @@ nav li a:hover{
 .popular{ 
     flex: 1; 
     margin-left: 3%; 
-    padding-right: ;
-
-    } 
+} 
 
 .popularIcon{ 
     justify-content: space-between; 
@@ -318,6 +308,7 @@ nav li a:hover{
     box-sizing: border-box; 
     overflow: hidden; 
     background-color: silver;
+    min-width: 345px;
 }  
 
 .popularFrame img{ 
@@ -336,7 +327,7 @@ nav li a:hover{
 
 .hotelName{ 
     margin: 0; 
-    font-weight: 700; 
+    font-weight: 600; 
     /*font-size: 1.1rem;*/  
 } 
 
@@ -346,7 +337,11 @@ nav li a:hover{
 } 
 
 /* Activities */ 
- 
+
+.activities{
+    padding-bottom: 50px;
+}
+
 .activitiesTab{ 
     display: grid; 
     grid-template: repeat(12, 1fr) / repeat(4, 1fr); 
@@ -444,13 +439,16 @@ nav li a:hover{
  
 /* Footer */ 
  
+
 footer{  
     padding: 40px 40px 5px 70px;
     background-color: #f2f2f2;  
+    flex: 1;
 } 
   
 footer div{ 
     flex: 1; 
+    margin-bottom: auto;
     
 } 
  
@@ -482,9 +480,14 @@ footer a:hover{
 /* Tablet version */
 @media only screen and (max-width: 1024px){ 
 
-    .main{ 
-        margin: 0; 
-    } 
+    body{ 
+        margin: 0 30px;
+    }
+
+
+    /*.main{ 
+        margin: auto; 
+    } */
 
  
     /* Search - Tablet */ 
@@ -505,7 +508,7 @@ footer a:hover{
 
     .popular{ 
         margin: 0 0 20px; 
-        padding: 0px;
+        padding: 12px;
     } 
 
     .popularFrame{ 
@@ -513,11 +516,11 @@ footer a:hover{
     } 
  
     .popularDescription .hotelName{ 
-        font-size: 1.4rem; 
+        font-size: 1.3rem; 
     } 
 
     .popularDescription p{ 
-        font-size: 1.2rem; 
+        font-size: 1.1rem; 
     } 
 
     .popularDescription .fa-star{ 
@@ -529,6 +532,7 @@ footer a:hover{
     .hotels{ 
         order: 2; 
     } 
+    
 
     .containerHotels{ 
         flex-direction: column; 
@@ -536,29 +540,43 @@ footer a:hover{
 
     /* Activities - Tablet */ 
     
+    .activities{ 
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+
     .activitiesTab{ 
         height: auto; 
-    } 
+    }
 
-    .activityFrame 
-    { 
-        height: 190px; 
-    } 
- 
-    .row12, .row5, .row6{ 
-        grid-row-end: span 4; 
-        grid-column-end: span 2; 
-    } 
- 
+        
+    .activityFrame12 img{ 
+        width: 100%; 
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 600px;
+    }
+    
+    .activityFrame6 img{ 
+        width: 100%; 
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 180px;
+    }
+
+
     .activityDescription{ 
-        font-size: 1.1rem; 
+        font-size: 1rem; 
     } 
  
     /* Footer - Tablet */ 
 
+
+    
     footer { 
 
-        padding: 35px 5px; 
+        padding: 35px 10px 10px 10px; 
         
     } 
 } 
@@ -571,10 +589,14 @@ footer a:hover{
     .main{ 
         margin: 0; 
     } 
+
+    body{ 
+        margin: 0 auto;
+    }
  
-   /* h2{ 
-        font-size: 1.2rem; 
-    } */
+    h2{ 
+        font-size: 1.4rem; 
+    } 
 
     /* Header - Mobile */ 
   
@@ -604,23 +626,22 @@ footer a:hover{
     } 
 
     nav li{ 
-        width: 50%; 
+        width: 100%; 
         text-align: center; 
         padding: 20px 0; 
         border-bottom: 3px solid #f2f2f2; 
-    } 
+    }
 
     nav li a{ 
         padding: inherit; 
     } 
 
-    nav li a:hover{ 
-        border-top: none;         
-    } 
+    .titreheb, nav li a:hover{
 
-    nav li:hover{ 
-        border-bottom-color:#0065FC; 
-    } 
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
 
     /* Search - Mobile */ 
 
@@ -630,10 +651,12 @@ footer a:hover{
 
     .searchInput{ 
         flex: 1; 
+        width: 100%;
     } 
 
     .searchBar{ 
-        margin: 35px 0 30px;
+        margin: 35px 0px 30px;
+        width: 100%;
     }  
 
     .searchButton{ 
@@ -659,7 +682,7 @@ footer a:hover{
 
     .popular{
         border-radius: 0;
-        padding: 40px 20px 30px; 
+        padding: 40px 40px 20px 15px; 
         margin-bottom: 40px; 
     } 
 
@@ -692,6 +715,7 @@ footer a:hover{
 
     /* Hotels - Mobile */ 
 
+
     .hotelFrame{ 
         height: 200px; 
     } 
@@ -717,7 +741,7 @@ footer a:hover{
     /* Activities - Mobile */ 
 
     .activities{ 
-        margin: 55px 20px 45px; 
+        margin: 55px 20px 4px; 
     } 
 
     .activitiesTab{ 
