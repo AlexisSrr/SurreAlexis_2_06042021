@@ -43,6 +43,9 @@ h2{
     font-weight: 600; 
 }
  
+.main{
+    padding: 0 50px 0 50px;
+}
 /* Header */  
  
 header{
@@ -151,7 +154,7 @@ nav a{
 .filter{ 
     align-items: center; 
     height: 46px; 
-    border: 2px solid #f2f2f2; 
+    border: 3px solid #d5d5d5; 
     border-left: none; 
     margin-left: 20px;   
     border-radius: 25px;  
@@ -205,12 +208,11 @@ nav a{
 .hotels, .popular{
     background-color: #f2f2f2;  
     border-radius: 20px;  
-    padding: 40px; 
+    padding: 40px;
 } 
 
 .hotels{ 
     flex: 2;
-    padding-left: 50px;
     
 }  
 
@@ -304,13 +306,13 @@ nav a{
     border: 5px solid #fff; 
     border-radius: 15px; 
     margin-bottom: 40px; 
-    box-shadow: 0 1px 4px #c1c1c1; 
+    box-shadow: 0 3px 7px #c1c1c1; 
     box-sizing: border-box; 
     overflow: hidden; 
     background-color: #F2F2F2;
-    min-width: 345px;
+    min-width: 180px;
 }  
-
+/* probleme de min-widht sur popular frame */
 .popularFrame img{ 
     width: 40%; 
     height: 100%; 
@@ -327,7 +329,7 @@ nav a{
 
 .hotelName{ 
     margin: 0; 
-    font-weight: 600; 
+    font-weight: 700; 
     /*font-size: 1.1rem;*/  
 } 
 
@@ -340,6 +342,9 @@ nav a{
 
 .activities{
     padding-bottom: 50px;
+    padding-top: 50px;
+
+    /* Le rajouté sur tout les autres blocs */
 }
 
 .activitiesTab{ 
@@ -433,7 +438,7 @@ nav a{
     align-self: center;  
     background-color: #fff; 
     padding-left: 10px;  
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     font-weight: 700;  
 } 
  
@@ -461,8 +466,13 @@ footer a:hover{
     color: #0065FC; 
 }
  
-@media only screen and (max-width: 1280px){ 
+@media only screen and (max-width: 1380px){ 
 
+   /* body{ 
+        padding: 0px 20px 0px 20px ;
+    } */
+    
+    
     .hotels{ 
         flex: 1.5;
     }  
@@ -471,6 +481,7 @@ footer a:hover{
         grid-template: repeat(3, 1fr) / repeat(2, 1fr); 
         margin: 30px 0;  
     }
+    
 
     .activityDescription{ 
         font-size: 1rem; 
@@ -478,12 +489,11 @@ footer a:hover{
 } 
 
 /* Tablet version */
-@media only screen and (max-width: 1024px){ 
+@media only screen and (max-width: 1140px){ 
 
     body{ 
         margin: 0 30px;
     }
-
 
     /*.main{ 
         margin: auto; 
@@ -513,6 +523,8 @@ footer a:hover{
 
     .popularFrame{ 
         height: 180px; 
+        min-width: 200px;
+        min-height: 70px;
     } 
  
     .popularDescription .hotelName{ 
@@ -551,11 +563,12 @@ footer a:hover{
     }
 
         
-    .activityFrame12 img{ 
+    .activityFrame12 img{   
         width: 100%; 
         object-fit: cover; 
         height: 100%; 
         max-height: 600px;
+        /* min-width: 247px; */
     }
     
     .activityFrame6 img{ 
@@ -565,7 +578,7 @@ footer a:hover{
         max-height: 180px;
     }
 
-
+    
     .activityDescription{ 
         font-size: 1rem; 
     } 
@@ -582,13 +595,14 @@ footer a:hover{
 } 
 
 /* Mobile version */ 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 780px){
 
     /* General */ 
 
+    
     .main{ 
-        margin: 0; 
-    } 
+        padding: 0px;
+    }
 
     body{ 
         margin: 0 auto;
@@ -628,13 +642,14 @@ footer a:hover{
     nav li{ 
         width: 100%; 
         text-align: center; 
-        padding: 20px 0; 
+        padding: 20px 0px; 
         border-bottom: 3px solid #f2f2f2; 
     }
 
     nav li a{ 
         padding: inherit; 
     } 
+
 
     .titreheb, nav li a:hover{
 
@@ -682,14 +697,14 @@ footer a:hover{
 
     .popular{
         border-radius: 0;
-        padding: 40px 40px 20px 15px; 
-        margin-bottom: 40px; 
+        padding: 30px 20px 20px;; 
+        margin-bottom: 40px;
     } 
 
     .popularFrame{ 
         height: 145px;
         margin-bottom: 10px; 
-        background-color: silver;
+        background-color: #F2F2F2;
     } 
 
     .popularIcon i{ 
@@ -721,7 +736,8 @@ footer a:hover{
     } 
 
     .hotels{
-        padding: 0 20px; 
+        margin: 0 auto;
+        padding: 30px 20px 20px;
         background-color: initial;  
     } 
 
@@ -734,6 +750,10 @@ footer a:hover{
         height: 116px; 
     } 
 
+    .hotelName{
+        padding-top: 5px;
+    }
+    
     .hotelDescription p{ 
         font-size: .9rem; 
     } 
@@ -741,7 +761,8 @@ footer a:hover{
     /* Activities - Mobile */ 
 
     .activities{ 
-        margin: 55px 20px 4px; 
+        padding: 30px 20px 20px;; 
+        padding-bottom: 50px;
     } 
 
     .activitiesTab{ 
